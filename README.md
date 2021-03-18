@@ -10,7 +10,7 @@
 * Java
 
 ## Setup
-You may choose to run in application such as Eclipse or command prompt.
+You may choose to run in any development software such as Eclipse, IntelliJ and etc.
 Make sure maven is installed.
 
 ### Installation
