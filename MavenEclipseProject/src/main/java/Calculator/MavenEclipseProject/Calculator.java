@@ -141,33 +141,6 @@ public class Calculator {
 				}
 			}
 		}
-
-		/*
-		for (int i = userList.size() - 1; i > -1; i--) {
-			if (userList.get(i).getAmount() > 0) {
-				for (int k = 0; k < userList.size(); k++) {
-					if (userList.get(k).getAmount() < 0 && userList.get(i).getAmount() > 0) {
-						numOfTrans++;
-						double amountStillOwe = 0;
-						double amountPaid = 0;
-						// Owe Money
-						if (userList.get(i).getAmount() <= Math.abs(userList.get(k).getAmount())) {
-							amountPaid = userList.get(i).getAmount();
-							userList.get(i).setAmount(0);
-							userList.get(k).setAmount(userList.get(k).getAmount() + amountPaid);
-						} else {
-							// Receive Money
-							amountStillOwe = userList.get(i).getAmount() - Math.abs(userList.get(k).getAmount());
-							amountPaid = userList.get(i).getAmount() - amountStillOwe;
-							userList.get(i).setAmount(amountStillOwe);
-							userList.get(k).setAmount(0);
-						}
-						System.out.println(userList.get(i).getUsername() + " pays " + userList.get(k).getUsername() + " $" +  checkDecimalPlace(Math.abs(amountPaid)) + ".");
-					}
-				}
-			}
-		}
-		*/
 		
 		System.out.println("Number of transactions: " + numOfTrans);
 	}
