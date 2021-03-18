@@ -10,7 +10,7 @@
 * Java
 
 ## Setup
-You may choose to run in any development software such as Eclipse, IntelliJ and etc.
+You may choose to run in any development software such as Eclipse, IntelliJ, Command Prompt (terminal) and etc.
 Make sure maven is installed.
 
 ### Installation
@@ -42,6 +42,16 @@ Make sure maven is installed.
    mvn package
    ```
 
+To Run via terminal:
+1. Compile class file. Navigate to the path where the class files are stored, then type this in your terminal:
+   ```sh
+   javac *.java
+   ```   
+2. Once the files are compiled, run the main file (Calculator.java):
+   ```sh
+   java Calculator.MavenEclipseProject.Calculator
+   ```   
+   
 ## Test
 If you want to run all the unit test classes.
 ```sh
